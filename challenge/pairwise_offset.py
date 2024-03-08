@@ -1,4 +1,5 @@
-def pairwise_offset(sequence, fillvalue, offset):
+def pairwise_offset(sequence, fillvalue="*", offset=0):
+    sequence=list(sequence)
     sequence2=sequence.copy()
     
     x=0
@@ -16,5 +17,6 @@ def pairwise_offset(sequence, fillvalue, offset):
     #print(sequence3)
     return sequence3
 
+#pairwise_offset('abcd', fillvalue='-', offset=1)
 
 
